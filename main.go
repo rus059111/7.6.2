@@ -17,6 +17,12 @@ func main() {
 	count := 4
 
 	for i := 0; i < count; i++ {
-		fmt.Println("*")
+		fmt.Print("*")
+		fmt.Println(" ")
+		for i := 0; i < count; i++ {
+			fmt.Print("*")
+			fmt.Println(" ")
+		}
 	}
+
 }
