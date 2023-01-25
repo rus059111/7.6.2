@@ -14,14 +14,14 @@ func main() {
 	fmt.Println("Введите высоту:")
 	fmt.Scan(&height)
 
-	count := 4
-
-	for i := 0; i < count; i++ {
-		fmt.Print("*")
-		fmt.Println(" ")
-		for i := 0; i < count; i++ {
-			fmt.Print("*")
-			fmt.Println(" ")
+	for i := 0; i != height; i++ {
+		fmt.Println()
+		for j := 0; j != width; j++ {
+			if (i+j)%2 == 0 {
+				fmt.Print(" ")
+			} else {
+				fmt.Print("*")
+			}
 		}
 	}
 
